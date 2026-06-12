@@ -1,372 +1,40 @@
-﻿
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lulrewards</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: Set the document title to the name of your application -->
+  <title>Lovable App</title>
+  <meta name="description" content="Lovable Generated Project">
+  <meta name="author" content="Lovable">
 
- <style>
-html, body {
-  max-width: 100%;
-  overflow-x: hidden !important;
-}
+  <!-- TODO: Update og:title to match your application name -->
+  <meta property="og:title" content="Lovable App">
+  <meta property="og:description" content="Lovable Generated Project">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f3e0333c-18ee-4750-9b7f-25874050d58e/id-preview-2ad008eb--e34b625e-9b6b-4282-85ef-b9cb64914500.lovable.app-1770918681164.png">
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-.container, .section, .wrapper, .main {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-.full-width, .hero, .banner {
-  width: 100%;
-  max-width: 100%;
-}
-
-.button, .cta, .offer-btn, .reward-btn {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("Montserrat-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("Montserrat-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-body {
-  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-</style>
-
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: #fff;
-      color: #111;
-    }
-
-    :root{
-      --shadow: 0 10px 28px rgba(0,0,0,.10);
-      --shadowSoft: 0 10px 24px rgba(0,0,0,.06);
-      --primaryRed: #e53935;
-      --primaryRedLight: #ff5252;
-    }
-
-    #girly-offer { max-width:700px; margin:0 auto; padding: 12px; padding-bottom: 120px; }
-
-    .top-card{
-      background:#fff;
-      border-radius:20px;
-      padding:18px 16px;
-      margin:20px auto 14px;
-      max-width:520px;
-      text-align:center;
-      box-shadow: 0 8px 20px rgba(0,0,0,.05);
-      border:1px solid rgba(0,0,0,.06);
-    }
-
-    .avatar{
-      width:78px;height:78px;border-radius:50%;
-      margin:0 auto 12px;
-      object-fit:cover;
-      box-shadow:0 8px 18px rgba(0,0,0,.15);
-    }
-
-    .kicker{font-size:14px;font-weight:700;color:#777;margin:0 0 6px;}
-    .headline{font-size:22px;line-height:1.2;font-weight:800;margin:0 0 6px;}
-    .subtitle{font-size:14px;color:#6d6d6d;margin:0;}
-
-    .sephora-btn{
-      background:linear-gradient(135deg, var(--primaryRed), var(--primaryRedLight));
-      color:#fff;
-      padding:14px 20px;
-      font-size:15px;
-      border:0;
-      cursor:pointer;
-      display:flex;
-      align-items:center;
-      border-radius:50px;
-      width:100%;
-      max-width:520px;
-      margin:14px auto 10px;
-      text-decoration:none;
-      animation:redPulse 2.4s infinite;
-      box-shadow:0 16px 36px rgba(229,57,53,.28);
-    }
-
-    .alt-btn{
-      transform: scale(0.94);
-      background: linear-gradient(135deg,#ff4fa6,#ff7ec6);
-      box-shadow:0 10px 22px rgba(255,79,166,.2);
-      animation:none !important;
-      opacity:.95;
-    }
-
-    @keyframes redPulse{
-      0%{box-shadow:0 0 0 0 rgba(229,57,53,.35);}
-      70%{box-shadow:0 0 0 14px rgba(229,57,53,0);}
-      100%{box-shadow:0 0 0 0 rgba(229,57,53,0);}
-    }
-
-    .btn-img{ width:44px;height:44px;border-radius:50%;object-fit:cover;box-shadow:0 8px 18px rgba(0,0,0,.12);background:#fff; }
-    .btn-text{display:flex;flex-direction:column;align-items:flex-start;margin-left:14px;}
-    .btn-title{font-size:16px;font-weight:900;}
-    .btn-sub{font-size:12px;font-weight:700;opacity:.96;}
-
-    .micro{text-align:center;font-size:12px;color:#7a7a7a;margin:6px 0 10px;font-weight:600;}
-    .eligible-box{
-      background:#fff;max-width:520px;margin:8px auto 14px;padding:10px 14px;
-      font-size:13px;text-align:center;border-radius:14px;font-weight:600;
-      box-shadow:0 8px 18px rgba(0,0,0,.05);border:1px solid #eee;
-    }
-
-.divider{
-  height:1px;
-  background:linear-gradient(90deg, transparent, rgba(0,0,0,.08), transparent);
-  margin:14px auto 12px;
-  max-width:520px;
-}
-
-details.how{
-  max-width:520px;
-  margin:14px auto 22px;
-  background:#fff;
-  border-radius:16px;
-  padding:12px 14px;
-  box-shadow: 0 10px 24px rgba(0,0,0,.06);
-  border:1px solid rgba(238,238,238,.95);
-}
-
-details.how summary{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  cursor:pointer;
-  list-style:none;
-}
-details.how summary::-webkit-details-marker{display:none;}
-
-.left{display:flex;align-items:center;gap:10px;font-weight:800;font-size:14px;}
-.tap-pill{font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;background:#f6f6f6;border:1px solid #eee;color:#444;}
-.chev{font-size:18px;transition:transform .25s ease;color:#888;}
-details[open] .chev{transform:rotate(90deg);}
-
-.steps{margin-top:12px;}
-.step-row{display:flex;gap:12px;padding:8px 4px;}
-.step-row:not(:last-child){border-bottom:1px solid rgba(0,0,0,.04);}
-
-.step-num{
-  width:24px;height:24px;border-radius:50%;
-  background:rgba(229,57,53,.1);
-  color:#e53935;
-  display:flex;align-items:center;justify-content:center;
-  font-size:12px;font-weight:800;
-}
-
-.step-text{font-size:14px;color:#333;line-height:1.45;}
-
-.proof-headline{text-align:center;font-size:18px;font-weight:800;margin:30px 0 10px;}
-.proof-stack{display:flex;flex-direction:column;gap:18px;max-width:420px;margin:0 auto 24px;}
-.proof-image{width:100%;border-radius:14px;box-shadow: 0 10px 28px rgba(0,0,0,.10);}
-
-.trust-text{text-align:center;font-size:12px;color:#888;margin:10px auto 0;font-weight:600;}
-
-
-    .sticky-wrap{
-  position: fixed;
-  left:0;
-  right:0;
-  bottom: 0;
-  z-index:9999;
-  padding:6px 10px 10px;
-  background: rgba(255,255,255,.96);
-  backdrop-filter: blur(12px);
-  border-top:1px solid #eee;
-  box-shadow:0 -10px 24px rgba(0,0,0,.12);
-  display: none;
-}
-
-body {
-  padding-bottom: 0;
-}
-
-
-    .sticky-inner{max-width:520px;margin:0 auto;}
-    .sticky-note{text-align:center;font-size:11px;font-weight:700;color:#777;margin:0 0 6px;}
-  </style>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Lovable">
+  <meta name="twitter:image"
+    content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f3e0333c-18ee-4750-9b7f-25874050d58e/id-preview-2ad008eb--e34b625e-9b6b-4282-85ef-b9cb64914500.lovable.app-1770918681164.png">
+  <script type="module" crossorigin="" src="assets/index-CHC0tzaY.js"></script>
+  <link rel="stylesheet" crossorigin="" href="assets/index-Boj6axjk.css">
+  <script defer="" src="~flock.js" data-proxy-url="/~api/analytics"></script>
+  <script defer="" src="__l5e/events.js" data-artifact-kind="preview_commit_sha"
+    data-artifact-id="2ad008ebf50a5d8236bd627dbbc9a64ec09b123a"
+    data-commit-sha="2ad008ebf50a5d8236bd627dbbc9a64ec09b123a"
+    data-context-token="v1.eyJwcm9qZWN0X2lkIjoiZTM0YjYyNWUtOWI2Yi00MjgyLTg1ZWYtYjljYjY0OTE0NTAwIiwiYXJ0aWZhY3Rfa2luZCI6InByZXZpZXdfY29tbWl0X3NoYSIsImFydGlmYWN0X2lkIjoiMmFkMDA4ZWJmNTBhNWQ4MjM2YmQ2MjdkYmJjOWE2NGVjMDliMTIzYSIsImNvbW1pdF9zaGEiOiIyYWQwMDhlYmY1MGE1ZDgyMzZiZDYyN2RiYmM5YTY0ZWMwOWIxMjNhIiwiZXhwIjoxNzgxMjg0ODI5fQ.UN0wuJILjmB4xcvC-PxG2oHrtr0ojvi359m-yKGOl4w"
+    data-replay="rrweb" data-replay-sample-rate="0.001" data-replay-url="/__l5e/replay"
+    data-replay-script-url="/__l5e/rrweb-record.js?__l5e_v=0.1.2-error-event-hardening"></script>
+  <meta name="twitter:title" content="Lovable App">
+  <meta name="twitter:description" content="Lovable Generated Project">
 </head>
-<script defer src="https://cloud.umami.is/script.js" data-website-id="e5126111-8adb-4f6b-a553-f9791d86396c"></script>
+
 <body>
-
-<div id="girly-offer">
-
-  <div class="top-card">
-    <img class="avatar" src="rppXNYm8/67829a8592805-66f2edc54b343-image1.png">
-    <p class="kicker">if you’re wondering too…</p>
-    <h1 class="headline">it’s the SHEIN, ULTA gift card  💄</h1>
-    <p class="subtitle">Tap the button below to continue.</p>
-  </div>
-
-  <a id="sephora-btn" class="sephora-btn" href="#">
-    <img class="btn-img" src="zBfxrrSy/c5910bd5-e5b2-4c70-b124-9560d8cbf698-link-in-bio-links-block-home-2af2051e-f17c-4f49-8af7-1eac99.webp">
-    <div class="btn-text">
-      <span class="btn-title">Unlock SHEIN Gift Card</span>
-      <span class="btn-sub">Tap to continue →</span>
-    </div>
-  </a>
-
-  <a id="shein-btn" class="sephora-btn alt-btn" href="#">
-    <img class="btn-img" src="images.png">
-    <div class="btn-text">
-      <span class="btn-title">Try Ulta Instead</span>
-      <span class="btn-sub">Tap to continue →</span>
-    </div>
-  </a>
-
-  <p class="micro">🔒 secure • mobile-friendly</p>
-  <div class="eligible-box" id="eligible-box">Checking eligibility…</div>
-
-<div class="divider"></div>
-
-<!-- HOW IT WORKS -->
-<details class="how">
-  <summary>
-    <span class="left">
-      <span>How It Works</span>
-      <span class="tap-pill">View steps</span>
-    </span>
-    <span class="chev">›</span>
-  </summary>
-  <div class="steps">
-    <div class="step-row"><div class="step-num">1</div><div class="step-text">Tap your preferred reward button above 👆</div></div>
-    <div class="step-row"><div class="step-num">2</div><div class="step-text">Enter your email + basic info</div></div>
-    <div class="step-row"><div class="step-num">3</div><div class="step-text">Complete the recommended deals</div></div>
-    <div class="step-row"><div class="step-num">4</div><div class="step-text">Claim your gift card ✅</div></div>
-  </div>
-</details>
-
-<!-- PROOF -->
-<div class="proof-headline">Real rewards. Real screenshots 👇</div>
-<div class="proof-stack">
-  <img class="proof-image" src="SsG1qpPK/6.webp">
-  <img class="proof-image" src="dV338myX/upscalemedia-transformed.webp">
-</div>
-
-<p class="trust-text">Powered by trusted partners • 256-bit encryption</p>
-
-
-</div>
-
-<div class="sticky-wrap" id="sticky-wrap">
-  <div class="sticky-inner">
-    <p class="sticky-note">Tap to continue</p>
-    <a id="sephora-btn-sticky" class="sephora-btn" href="#">
-      <img class="btn-img" src="zBfxrrSy/c5910bd5-e5b2-4c70-b124-9560d8cbf698-link-in-bio-links-block-home-2af2051e-f17c-4f49-8af7-1eac99.webp">
-      <div class="btn-text">
-        <span class="btn-title">Unlock SHEIN Gift Card</span>
-        <span class="btn-sub">Tap to continue →</span>
-      </div>
-    </a>
-  </div>
-</div>
-
-<!-- Umami -->
-<!-- <script defer="" src="script.js" data-website-id="cf80da7c-cdc7-4b72-a852-a0776c8aacff"></script> -->
-
-<script>
-(function(){
-
-  const sheinBtn = document.getElementById('shein-btn');
-  const sephoraBtn = document.getElementById('sephora-btn');
-  const sephoraSticky = document.getElementById('sephora-btn-sticky');
-  const box = document.getElementById('eligible-box');
-  const sticky = document.getElementById('sticky-wrap');
-
-  const shein_link = "https://linkthem.net/aff_c?offer_id=1181&aff_id=149371";
-  const sephora_link = "https://giftclick.org/aff_c?offer_id=1836&aff_id=149371";
-
-  const ROW = "https://www.uplevelrewards.com/?Flow=656AE1C3-D3CE-3C2C-D9AE-1CBE7395FA7DE8814900&isPrePop=true&RBC=1&lp=limitedtime2xbonus&reward=shein7502xbonus1&o=218467&affsecid=5262032457&subaff1=149371&subaff2=208110&subaff3=264309&aff_pixel=&subaff4=shein7502xbonus1-default-40972-2xrewards&DVID=&bckm=1";
-  const ROW2 = "https://www.uplevelrewards.com/?Flow=656AE1C3-D3CE-3C2C-D9AE-1CBE7395FA7DE8814900&isPrePop=true&RBC=1&lp=flashpollshopping&reward=ultapoll750&o=217582&affsecid=5262032338&subaff1=149371&subaff2=208110&subaff3=254309&aff_pixel=&subaff4=ultapoll750-default-37972-flashpollshopping&DVID=&bckm=1";
-
-  
-  function flag(cc){
-    return String.fromCodePoint(...[...cc].map(c => 127397 + c.charCodeAt()));
-  }
-
-  function apply(cc, name){
-    const sheinFinal = ["US","CA","GB","AU"].includes(cc) ? shein_link : ROW;
-    const sephoraFinal = ["US","CA","GB","AU"].includes(cc) ? sephora_link : ROW2;
-
-    sheinBtn.href = sheinFinal;
-    sephoraBtn.href = sephoraFinal;
-    sephoraSticky.href = sephoraFinal;
-
-    box.textContent = `✅ Reward available in ${name} ${flag(cc)}`;
-  }
-
-  sheinBtn.href = ROW;
-  sephoraBtn.href = ROW2;
-  sephoraSticky.href = ROW2;
-
-  setTimeout(async () => {
-    try {
-      const r = await fetch("https://api.country.is/");
-      const d = await r.json();
-      const cc = d.country;
-
-      const r2 = await fetch("https://restcountries.com/v3.1/alpha/" + cc);
-      const c = await r2.json();
-
-      apply(cc, c[0].name.common);
-    } catch(e) {
-      box.textContent = "✅ Reward available worldwide 🌍";
-    }
-  }, 300);
-
-  // sephoraBtn.onclick = e => {
-  //   e.preventDefault();
-  //   window.umami && umami.track("Click - SEPHORA");
-  //   setTimeout(() => window.open(sephoraBtn.href, "_blank"), 140);
-  // };
-
-  // sephoraSticky.onclick = e => {
-  //   e.preventDefault();
-  //   window.umami && umami.track("Click - SEPHORA Sticky");
-  //   setTimeout(() => window.open(sephoraSticky.href, "_blank"), 140);
-  // };
-
-  // sheinBtn.onclick = e => {
-  //   e.preventDefault();
-  //   window.umami && umami.track("Click - SHEIN (Backup)");
-  //   setTimeout(() => window.open(sheinBtn.href, "_blank"), 140);
-  // };
-
-  window.addEventListener('scroll', () => {
-    sticky.style.display = window.scrollY > 260 ? 'block' : 'none';
-  }, { passive: true });
-
-})();
-</script>
-
+  <div id="root"></div>
 </body>
+
 </html>

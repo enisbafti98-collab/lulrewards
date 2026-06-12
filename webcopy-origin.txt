@@ -1,36 +1,20 @@
-Uri: https://cloud.umami.is/script.js
-File Name: C:\Users\fredd\OneDrive\Documents\makeupreward\makeupreward.com\script.js
-Content Type: application/javascript
-
-Uri: https://i.postimg.cc/dV338myX/upscalemedia-transformed.webp
-File Name: C:\Users\fredd\OneDrive\Documents\makeupreward\makeupreward.com\dV338myX\upscalemedia-transformed.webp
-Content Type: image/webp
-
-Uri: https://i.postimg.cc/rppXNYm8/67829a8592805-66f2edc54b343-image1.png
-File Name: C:\Users\fredd\OneDrive\Documents\makeupreward\makeupreward.com\rppXNYm8\67829a8592805-66f2edc54b343-image1.png
-Content Type: image/png
-
-Uri: https://i.postimg.cc/SsG1qpPK/6.webp
-File Name: C:\Users\fredd\OneDrive\Documents\makeupreward\makeupreward.com\SsG1qpPK\6.webp
-Content Type: image/webp
-
-Uri: https://i.postimg.cc/T3pPDdq6/Love-Sephora.webp
-File Name: C:\Users\fredd\OneDrive\Documents\makeupreward\makeupreward.com\T3pPDdq6\Love-Sephora.webp
-Content Type: image/webp
-
-Uri: https://i.postimg.cc/zBfxrrSy/c5910bd5-e5b2-4c70-b124-9560d8cbf698-link-in-bio-links-block-home-2af2051e-f17c-4f49-8af7-1eac99.webp
-File Name: C:\Users\fredd\OneDrive\Documents\makeupreward\makeupreward.com\zBfxrrSy\c5910bd5-e5b2-4c70-b124-9560d8cbf698-link-in-bio-links-block-home-2af2051e-f17c-4f49-8af7-1eac99.webp
-Content Type: image/webp
-
-Uri: https://makeupreward.com/
-File Name: C:\Users\fredd\OneDrive\Documents\makeupreward\makeupreward.com\index.htm
+Uri: https://luluhauls.com/
+File Name: C:\Downloaded Web Sites\luluhauls.com\index.htm
 Content Type: text/html
 
-Uri: https://makeupreward.com/Montserrat-Regular.woff2
-File Name: C:\Users\fredd\OneDrive\Documents\makeupreward\makeupreward.com\Montserrat-Regular.woff2
-Content Type: font/woff2
+Uri: https://luluhauls.com/assets/index-Boj6axjk.css
+File Name: C:\Downloaded Web Sites\luluhauls.com\assets\index-Boj6axjk.css
+Content Type: text/css
 
-Uri: https://makeupreward.com/Montserrat-SemiBold.woff2
-File Name: C:\Users\fredd\OneDrive\Documents\makeupreward\makeupreward.com\Montserrat-SemiBold.woff2
-Content Type: font/woff2
+Uri: https://luluhauls.com/assets/index-CHC0tzaY.js
+File Name: C:\Downloaded Web Sites\luluhauls.com\assets\index-CHC0tzaY.js
+Content Type: text/javascript
+
+Uri: https://luluhauls.com/__l5e/events.js
+File Name: C:\Downloaded Web Sites\luluhauls.com\__l5e\events.js
+Content Type: application/javascript
+
+Uri: https://luluhauls.com/~flock.js
+File Name: C:\Downloaded Web Sites\luluhauls.com\~flock.js
+Content Type: text/javascript
 
